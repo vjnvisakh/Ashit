@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Diwali</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  .jumbotron {
+      background-color: #f4511e;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #f4511e;
+      font-size: 50px;
+  }
+  .logo {
+      color: #f4511e;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #f4511e;
+  }
+  .carousel-indicators li {
+      border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+      background-color: #f4511e;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #f4511e; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #f4511e;
+      background-color: #fff !important;
+      color: #f4511e;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #f4511e !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #f4511e;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #f4511e;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f4511e !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) 
+  {
+    .logo 
+    {
+        font-size: 150px;
+    }
+  }
+
+  #cover
+  {
+      background: url("img/cover.jpg");
+      height:500px;
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top" style="background:#023643">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">HISTORY</a></li>
+        <li><a href="#links">LINKS</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron" id="cover">
+    <h1><b>Diwali</b></h1>
+    <p>The festival of lights . . .</p>
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2 style="color:#023643">The festival of lights</h2><br>      
+      <p style="text-align:justify;font-size:110%">
+        Diwali or Deepavali is the Hindu festival of lights celebrated every year in autumn in the northern hemisphere (spring in
+        southern hemisphere). It is an official holiday in Fiji, Guyana, India, Malaysia, Mauritius, Myanmar, Nepal, Singapore,
+        Sri Lanka, Suriname, and Trinidad and Tobago. One of the most popular festivals of Hinduism, it spiritually signifies the
+        victory of light over darkness, good over evil, knowledge over ignorance, and hope over despair. Its celebration
+        includes millions of lights shining on housetops, outside doors and windows, around temples and other buildings in the communities
+        and countries where it is observed. The festival preparations and rituals typically extend over a five-day period, but
+        the main festival night of Diwali coincides with the dark night of the Hindu Lunisolar month Kartika in Bikram Sambat calendar
+        (the month of Aippasi in Tamil Calendar), on the 15th of the month. In the Gregorian calendar, Diwali night falls between
+        mid-October and mid-November.
+      </p>
+      <br>
+    </div>
+    <div class="col-sm-4">
+      <img src="img/diya.png" height="300" width="400" />
+    </div>
+  </div>
+</div>
+
+<div id="services" class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="img/diya2.png">
+    </div>
+    <div class="col-sm-8">
+      <h2>History</h2><br>      
+      <p style="font-size:110%;text-align:justify">
+         Diwali dates back to ancient times in India, as a festival after the summer harvest in the Hindu calendar month of Kartika.
+        The festival is mentioned in Sanskrit texts such as the Padma Purana, the Skanda Purana both completed in second half of
+        1st millennium AD but believed to have been expanded from a core text from an earlier era. The diyas (lamps) are mentioned
+        in Skanda Purana to symbolically represent parts of the sun, the cosmic giver of light and energy to all life, who seasonally
+        transitions in the Hindu calendar month of Kartik. Hindus in some regions of India associate Diwali with the legend
+        of Yama and Nachiketa on Kartika amavasya (Diwali night). The Nachiketa story about right versus wrong, true wealth versus
+        transient wealth, knowledge versus ignorance is recorded in Katha Upanishad composed in 1st millennium BC. King Harsha
+        in the 7th century Sanskrit play Nagananda mentions Deepavali as Deepapratipadutsava (Deepa = light, pratipada = first day,
+        utsava = festival), where lamps were lit and newly engaged brides and grooms were given gifts. Rajasekhara referred
+        to Deepavali as Dipamalika in his 9th century Kavyamimamsa, wherein he mentions the tradition of homes being whitewashed
+        and oil lamps decorating homes, streets and markets in the night. The Persian traveller and historian Al Biruni, in his
+        11th century memoir on India, wrote of Deepavali being celebrated by Hindus on New Moon day of the month of Kartika.
+        </p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="links" class="container-fluid text-center">
+  <h2>REFERENCES</h2>
+  <h4>Get to know more about this awesome festival . . .</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <a href="https://en.wikipedia.org/wiki/Diwali" target="blank">
+        <img src="img/wiki.png" /><br />    
+        Wikipedia
+    </a>      
+    </div>
+
+    <div class="col-sm-4">
+        <a href="http://www.diwalifestival.org/diwali-article.html" target="blank">
+            <img src="img/scfi.png" height="220" width="280" />
+            <br /> SCFI
+        </a>         
+    </div>
+    <div class="col-sm-4">         
+    <a href="https://www.lonelyplanet.com/india/travel-tips-and-articles/diwali-indias-festival-of-lights/40625c8c-8a11-5710-a052-1479d27730ef" target="blank">
+        <img src="img/lonely.png" height="220" width="380" />
+        <br /> The Lonely Planet
+    </a>
+    </div>
+  </div>  
+</div>
+
+
+
+
+<!-- Add Google Maps -->
+
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<footer class="container-fluid text-center" style="background:#023643">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>  
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
